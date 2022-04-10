@@ -1,4 +1,4 @@
-<img src="docs/satispay_logo.svg" alt="Satispay" height="30">
+<img src="doc/satispay_logo.svg" alt="Satispay" height="30">
 
 # Satispay for Flutter
 
