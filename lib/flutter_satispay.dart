@@ -1,7 +1,5 @@
 library flutter_satispay;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/satispay.dart';
+export 'src/enums/satispay_environment.dart';
+export 'src/widgets/satispay_button.dart';
