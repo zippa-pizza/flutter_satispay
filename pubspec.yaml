@@ -1,7 +1,14 @@
 name: flutter_satispay
-description: A new Flutter package project.
 version: 0.0.1
-homepage:
+
+description: Flutter package to handle Satispay payments.
+
+homepage: https://github.com/zippa-pizza/flutter_satispay
+repository: https://github.com/zippa-pizza/flutter_satispay
+
+platforms:
+  android:
+  ios:
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
