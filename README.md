@@ -1,4 +1,7 @@
-<img src="doc/satispay_logo.svg" alt="Satispay" height="30">
+<img
+  src="https://github.com/zippa-pizza/flutter_satispay/raw/main/doc/satispay_logo.svg"
+  alt="Satispay"
+  height="30">
 
 # Satispay for Flutter
 
