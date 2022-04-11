@@ -7,6 +7,41 @@
 
 [![pub package](https://img.shields.io/pub/v/flutter_satispay.svg)](https://pub.dev/packages/flutter_satispay)
 
+## Getting started
+
+### Android
+
+In your `AndroidManifest.xml` add these queries:
+
+```xml
+<queries>
+  <!-- PRODUCTION ENVIRONMENT -->
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="satispay" />
+  </intent>
+  <!-- STAGING ENVIRONMENT -->
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="satispay-stag" />
+  </intent>
+</queries>
+```
+
+### iOS
+
+In your `Info.plist` add these `LSApplicationQueriesSchemes`
+
+```xml
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <!-- PRODUCTION ENVIRONMENT -->
+  <string>satispay</string>
+  <!-- STAGING ENVIRONMENT -->
+  <string>satispay-stag</string>
+</array>
+```
+
 ## Usage
 
 ### Initialize the package
