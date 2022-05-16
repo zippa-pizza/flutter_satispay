@@ -25,7 +25,11 @@ class Satispay {
     return 'satispay';
   }
 
-  Future<bool> isAvailable() => canLaunch('$_satispayScheme://');
+  Future<bool> isAvailable() {
+    final Uri url = Uri.parse('$_satispayScheme://');
+
+    return canLaunchUrl(url);
+  }
 
   /// Launch the Satispay app to confirm the payment.
   ///
@@ -35,7 +39,10 @@ class Satispay {
   Future<void> loadPayment({
     required String token,
     required String callbackUrl,
-  }) =>
-      launch(
-          '$_satispayScheme://external/generic/charge?token=$token&callback_url=$callbackUrl');
+  }) async {
+    final Uri url = Uri.parse(
+        '$_satispayScheme://external/generic/charge?token=$token&callback_url=$callbackUrl');
+
+    await launchUrl(url);
+  }
 }

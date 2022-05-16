@@ -30,6 +30,7 @@ class SatispayButton extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         decoration: const ShapeDecoration(shape: StadiumBorder()),
         child: TextButton(
+          onPressed: onPressed,
           child: Row(
             children: [
               Container(
@@ -64,7 +65,6 @@ class SatispayButton extends StatelessWidget {
               ),
             ],
           ),
-          onPressed: onPressed,
         ),
       ),
     );
