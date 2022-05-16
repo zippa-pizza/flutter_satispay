@@ -30,7 +30,7 @@ In your `AndroidManifest.xml` add these queries:
 
 ### iOS
 
-In your `Info.plist` add these `LSApplicationQueriesSchemes`
+In your `Info.plist` add these `LSApplicationQueriesSchemes` entries:
 
 ```xml
 <key>LSApplicationQueriesSchemes</key>
