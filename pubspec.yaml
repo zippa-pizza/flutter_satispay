@@ -1,7 +1,7 @@
 name: flutter_satispay
 description: Flutter package to handle Satispay payments in your mobile apps.
 
-version: 1.0.0
+version: 1.0.1
 
 homepage: https://github.com/zippa-pizza/flutter_satispay
 repository: https://github.com/zippa-pizza/flutter_satispay
